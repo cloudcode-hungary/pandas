@@ -855,6 +855,7 @@ def read_xml(
     iterparse: dict[str, list[str]] | None = None,
     compression: CompressionOptions = "infer",
     storage_options: StorageOptions = None,
+    **kwargs,
 ) -> DataFrame:
     r"""
     Read XML document into a ``DataFrame`` object.
@@ -1099,4 +1100,5 @@ def read_xml(
         iterparse=iterparse,
         compression=compression,
         storage_options=storage_options,
+        **kwargs,
     )
